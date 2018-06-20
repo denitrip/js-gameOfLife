@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<link rel="shortcut icon" href="views/logo.gif" type="image/x-icon">
+	<link rel="stylesheet" href="views/index.css">
+    <meta charset="UTF-8">
+    <title>Game of Life</title>  
+</head>
+<body >
+<div>
+Популяция: <input class="result" id="population" disabled></input>Поколение: <input class="result" id="generation" disabled></input></div>
+<canvas  id="canvas" onclick="setDefaults(event)" width="400" height="400"></canvas>
+<div id="btnGroup">
+<button class="btn start"  id="start" onclick="unPause(),letTheGameBegin()" disabled>Старт</button>
+<button class="btn clear"  id="clear" onclick="clearField()">Очистить</button>
+<button class="btn pause" id="pause" onclick="Pause()" disabled>Пауза</button> 
+Размер точки: <select id="sel" onchange="setSizes()"></select> 
+<button id="help" onclick="Instruction ()">?</button>
+</div>
+<ol id="messages"></ol>
+ <script src="scripts/params/params.js" ></script>
+ <script src="scripts/game.js" ></script>
+ <script src="scripts/messages.js" ></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
